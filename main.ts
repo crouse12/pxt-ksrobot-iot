@@ -294,9 +294,10 @@ namespace KSRobot_IOT {
     //% weight=67
     //% block="MQTT Topic %receivedata"
     export function MQTT_Data(receivedata: string): string {
-
+        let a=receive_topic_value;
+        receive_topic_value="";
         if (receivedata.compare(receive_topic_name) == 0) {
-            return receive_topic_value;
+            return a;
         }
         else
             return "";
