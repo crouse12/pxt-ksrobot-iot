@@ -123,7 +123,7 @@ namespace KSRobot_IOT {
                 temp_name = iot_receive_data.substr(strlen1, strlen2)
                 Version = iot_receive_data.substr(strlen3, strlen4)
             }
-
+           iot_receive_data=""
 
 
         })
