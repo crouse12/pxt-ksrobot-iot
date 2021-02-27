@@ -413,8 +413,10 @@ namespace KSRobot_IOT {
     //% weight=50
     //% block="Receive Data"
     export function Receive_Data(): string {
-
-        return iot_receive_data;
+        let a="";
+        a=iot_receive_data;
+        iot_receive_data="";
+        return a;
     }
 
 
